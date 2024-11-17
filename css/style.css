@@ -1,68 +1,117 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .hero {
-    background: url('assets/images/hero-bg.jpg') center center/cover no-repeat;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  h1 {
-    font-size: 3.5rem;
-  }
-  
-  section {
-    padding: 60px 0;
-  }
-  
-  /* Animation */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate__fadeIn {
-    animation: fadeInUp 1s ease-out;
-  }
-  
-  /* Hero Image */
-  .hero img {
-    max-width: 80%;
-    height: auto;
-    margin-top: 20px;
-    animation: fadeInUp 1s ease-in;
-  }
-  
-  /* Custom Styles for Sections */
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Footer */
-  footer {
-    font-size: 0.9rem;
-    color: #bbb;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer a:hover {
-    color: #3498db;
-  }
-  
+/* Parallax Effect */
+.parallax {
+  background-image: url('../img/header-bg.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+
+/* Profile Picture Styling */
+#about img {
+  border: 3px solid #ddd;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills Section */
+#skills {
+  padding-bottom: 60px;
+}
+#skills .fa-3x {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Projects */
+.card {
+  height: 100%;
+}
+
+/* General text alignment */
+p {
+  text-align: justify; /* Ensures even alignment on both sides */
+  line-height: 1.6;   /* Improves readability by increasing line spacing */
+}
+
+/* Section-specific padding for better spacing */
+#about {
+  padding: 60px 15px; /* Top/bottom padding increased for aesthetics */
+}
+
+#skills {
+  padding-top: 80px;
+}
+
+/* Add padding to all section headers */
+h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase; /* Makes headings stand out */
+  text-align: center;
+}
+
+/* Footer alignment */
+footer p, footer a {
+  text-align: center;
+}
+
+/* About Section Styling */
+#about {
+  padding: 60px 15px; /* Top/bottom padding for spacing */
+}
+
+#about h2 {
+  margin-bottom: 20px;
+  text-align: justify; /* Align heading to the left */
+}
+
+.about-text {
+  text-align: justify; /* Justify text for a clean look */
+  line-height: 1.6;    /* Improve readability */
+}
+
+#about img {
+  border-radius: 50%; /* Ensure it's circular */
+  border: 5px solid #ddd; /* Optional border for styling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  display: block; /* Ensures proper positioning */
+  margin: 0 auto; /* Centers the image in its column */
+}
+#projects img{
+  height: 100px;
+  width: 150px;
+}
+
+#download-resume {
+  background-color: #f8f9fa;  /* Light background */
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+
+#download-resume .btn {
+  font-size: 18px;
+  padding: 10px 25px;
+  display: inline-flex;
+  align-items: left;
+}
+
+#download-resume i {
+  margin-right: 10px;  /* Space between icon and text */
+}
+
+.download-icon {
+  text-decoration: none;  /* Remove underline on click */
+  color: #007bff;         /* Change color of the icon */
+  transition: transform 0.3s ease;
+}
+
+.download-icon:hover {
+  transform: scale(2);  /* Enlarge icon on hover */
+  color: #0056b3;         /* Change color on hover */
+}

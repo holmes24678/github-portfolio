@@ -1,6 +1,12 @@
-// Optional: Form validation or interactivity for contact form
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Your message has been sent!');
+// Smooth scrolling
+$(document).ready(function() {
+  $("a.nav-link").on('click', function(event) {
+      if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top - 70
+          }, 800);
+      }
   });
-  
+});
