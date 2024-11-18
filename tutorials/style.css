@@ -1,0 +1,94 @@
+/* Header and Footer */
+header, footer {
+    background-color: #6c757d; /* Gray */
+    color: white;
+    height: 56px;
+    z-index: 1050;
+}
+
+footer .container {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* Sidebar */
+#sidebar {
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 56px;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1040;
+    width: 200px; /* Reduced width */
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        position: static;
+        width: 100%; /* Full width for mobile */
+    }
+}
+
+/* Content Section */
+#content {
+    margin-left: 220px; /* Matches sidebar width + gap */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #content {
+        margin-left: 0;
+    }
+}
+
+/* Code Block Styling */
+.code-block {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.copy-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.copy-icon:hover {
+    color: #0056b3;
+}
+
+/* Next Button */
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1030;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .next-button {
+        right: 10px;
+        bottom: 10px;
+    }
+}

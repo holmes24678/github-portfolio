@@ -1,0 +1,182 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.nav .nav-link {
+    margin: 0 10px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+#search-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#search-form input {
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#search-form.active input {
+    width: 200px;
+    opacity: 1;
+    padding: 5px 10px;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    padding: 20px;
+}
+
+.copy-feedback {
+    color: green;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.copy-feedback.visible {
+    opacity: 1;
+}
+
+/* Search form container */
+.search-container {
+    position: relative;
+}
+
+/* Style for the search form */
+#search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Style for input field */
+#search-form input {
+    width: 0;
+    opacity: 0;
+    padding-right: 35px;  /* Space for the icon inside */
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Style for active state */
+#search-form.active {
+    width: 250px; /* Width when form is active */
+    opacity: 1;
+}
+
+/* Style for input field when form is active */
+#search-form.active input {
+    width: 200px; /* Width of the input */
+    opacity: 1;
+}
+
+/* Search icon style inside the form */
+.search-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 10px; /* Position it at the right inside the form */
+    z-index: 2;
+}
+
+/* Hide the search icon when form is active */
+.search-container .toggle-search.d-none {
+    display: none;
+}
+
+/* Button inside the form stays on the right */
+#search-form button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
+
+/* Tutorial section styles */
+.tutorial-section {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.tutorial-section h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tutorial-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+.tutorial-section {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Set a consistent height for all boxes */
+}
+
+.tutorial-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tutorial-button:hover {
+    background-color: #0056b3;
+}
